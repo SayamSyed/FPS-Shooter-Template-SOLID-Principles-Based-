@@ -177,6 +177,27 @@ public float attackDamage;
 
 ---
 
+## 🚀 Optimization Features
+
+To ensure smooth performance on lower-end devices (tested on a 3GB RAM Android phone):
+
+- ✅ **Target FPS**: Maintains stable 55–60 FPS
+- ✅ **URP Tweaks**: Custom lightweight URP asset
+- ✅ **Shadows Disabled**: All real-time shadows turned off
+- ✅ **Static Batching**: All environment GameObjects marked as `Static`
+- ✅ **Baked Lighting**: Light baking tested (minimal performance improvement, retained default)
+- ✅ **No Occlusion Culling**: Not applied yet, optional for expansion
+- ✅ **Minimal Environment**: Greybox-style environment for clarity and performance
+- ✅ **NavMesh Optimization**: Simplified navigation mesh baking
+- ✅ **Texture Optimization**:
+  - All textures are **Power-of-Two (POT)**
+  - Used **ASTC compression (6x6 or 8x8)**
+  - Texture resolutions capped between **256 to 1024 px**
+
+These steps collectively result in a very lightweight and mobile-friendly FPS project.
+
+---
+
 ## 🔮 Future Ideas
 
 - ✅ Headshot/body-part damage multipliers
